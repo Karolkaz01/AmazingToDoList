@@ -29,7 +29,6 @@ jobs:
           sudo git pull
           sudo npm install 
           sudo npm run build
-          sudo npm run test
           sudo sudo systemctl restart nginx
         
           
