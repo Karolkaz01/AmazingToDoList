@@ -23,9 +23,9 @@ jobs:
         key: ${{ secrets.SSH_PRIVATE_KEY }}
         port: 22
         script: |
-          sudo eval "$(ssh-agent -s)"
-          sudo ssh-add ~/.ssh/id_rsa
-          sudo cd ~/AmazingToDoList/
+          eval "$(ssh-agent -s)"
+          ssh-add ~/.ssh/id_rsa
+          cd ~/AmazingToDoList/
           sudo npm install 
           sudo npm run build
           sudo sudo systemctl restart nginx
