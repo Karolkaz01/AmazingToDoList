@@ -26,6 +26,11 @@ jobs:
           eval "$(ssh-agent -s)"
           ssh-add ~/.ssh/id_rsa
           cd ~/AmazingToDoList/
+          sudo git pull
           sudo npm install 
           sudo npm run build
           sudo sudo systemctl restart nginx
+    - name: Tests
+      run: |
+        npm run test
+          
