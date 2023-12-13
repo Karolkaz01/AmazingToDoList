@@ -32,5 +32,6 @@ jobs:
           sudo sudo systemctl restart nginx
     - name: Tests
       run: |
+        cd ~/AmazingToDoList/
         sudo npm run test
           
