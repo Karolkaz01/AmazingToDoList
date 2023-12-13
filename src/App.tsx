@@ -13,7 +13,7 @@ function App() {
     <QueryClientProvider client={queryClient}>
       <TaskModal isOpen={isOpen} toggle={toggle} />
       <div className="m-auto mt-10 flex w-[650px] flex-col items-center justify-center space-y-3">
-        <h1 className="mb-5 text-6xl">Todo App</h1>
+        <h1 className="mb-5 text-6xl">Todo app 8===D</h1>
         <SearchBar onAdd={toggle} setSearchName={setSearchName} />
         <TaskList searchName={searchName} />
       </div>
